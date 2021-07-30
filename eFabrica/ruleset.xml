@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="efabrica" xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>eFabrica coding standard.</description>
+
+    <!-- Include the whole PSR-2 standard -->
+    <rule ref="PSR2"/>
+
+    <!-- Overriden from PSR2 where blank lines are ignored -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
+        <properties>
+            <property name="ignoreBlankLines" value="false"/>
+        </properties>
+    </rule>
+
+    <!-- Overriden from PSR2 where severity was 0 -->
+    <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace.EmptyLines">
+        <severity>5</severity>
+    </rule>
+
+    <!-- one blank line before and after each function except first and last -->
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="spacingBeforeFirst" value="0"/>
+            <property name="spacingAfterLast" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- one blank line before and after each member var except first and last -->
+    <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="spacingBeforeFirst" value="0" />
+        </properties>
+    </rule>
+
+    <!-- One space before and after each operator -->
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing">
+        <properties>
+            <property name="ignoreNewlines" value="true"/>
+            <property name="ignoreSpacingBeforeAssignments" value="false"/>
+        </properties>
+    </rule>
+
+    <!-- use exactly one space before and after dot (.) in string concatenating -->
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+
+</ruleset>
