@@ -7,6 +7,7 @@ eFabrica coding standard for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_
 1. Requires exactly one space before and after . (dot) in string concatenating
 1. Requires exactly one blank line before and after each function except first and last
 1. Requires exactly one blank line before and after each member var except first and last
+1. Prefer to use single quotes over double quotes. Double quotes are available if string contains variable
 
 ## Usage
 ```shell
