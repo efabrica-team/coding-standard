@@ -5,6 +5,11 @@
     <!-- Include the whole PSR-2 standard -->
     <rule ref="PSR2"/>
 
+    <!-- Turn of blank line after namespace declaration - will be check with SlevomatCodingStandard.Namespaces.NamespaceSpacing -->
+    <rule ref="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter">
+        <severity>0</severity>
+    </rule>
+
     <!-- Overriden from PSR2 where blank lines are ignored -->
     <rule ref="Squiz.WhiteSpace.SuperfluousWhitespace">
         <properties>
@@ -17,7 +22,7 @@
         <severity>5</severity>
     </rule>
 
-    <!-- one blank line before and after each function except first and last -->
+    <!-- One blank line before and after each function except first and last -->
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
         <properties>
             <property name="spacing" value="1"/>
@@ -26,7 +31,7 @@
         </properties>
     </rule>
 
-    <!-- one blank line before and after each member var except first and last -->
+    <!-- One blank line before and after each member var except first and last -->
     <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
         <properties>
             <property name="spacing" value="1" />
@@ -42,7 +47,7 @@
         </properties>
     </rule>
 
-    <!-- use exactly one space before and after dot (.) in string concatenating -->
+    <!-- Use exactly one space before and after dot (.) in string concatenating -->
     <rule ref="Squiz.Strings.ConcatenationSpacing">
         <properties>
             <property name="spacing" value="1"/>
@@ -50,8 +55,39 @@
         </properties>
     </rule>
 
-    <!-- prefer to use single quotes over double quotes -->
+    <!-- Requires 0 spaces after reference. -->
+    <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing">
+        <properties>
+            <property name="spacesCountAfterReference" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Prefer to use single quotes over double quotes -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired" />
 
+    <!-- Requires only one namespace in a file. -->
+    <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
+
+    <!-- Enforces one space after namespace, disallows content between namespace name and semicolon and disallows use of bracketed syntax. -->
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
+
+    <!-- Require exactly one empty line before and one after namespace line -->
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
+
+    <!-- No empty lines between uses  -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
+
+    <!-- No empty lines between trait uses  -->
+    <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">
+        <properties>
+            <property name="linesCountBeforeFirstUse" value="0"/>
+            <property name="linesCountAfterLastUseWhenLastInClass" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Require no whitespace between parenthesis and return type colon, one space between return type colon and return type -->
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+
+    <!-- Requires new with parentheses. -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
 </ruleset>

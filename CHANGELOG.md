@@ -2,6 +2,17 @@
 
 ### [Unreleased][unreleased]
 
+#### Added
+- namespace rules
+  - require one blank line before and one blank line after namespace statement
+  - only one namespace per file
+- uses rules
+  - no blank lines between uses
+  - one line before first use and one line after last use
+- trait uses rules
+  - no blank lines between trait uses
+- requires new with parentheses.
+
 ### [0.1.0] - 2021-08-02
 - created eFabrica coding standard based on PSR-2
 - added Slevomat codngin standard - rule ReturnTypeHintSpacing 

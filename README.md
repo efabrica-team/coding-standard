@@ -7,8 +7,13 @@ eFabrica coding standard for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_
 1. Requires exactly one space between return type colon and return type
 1. Requires exactly one space before and after each operator
 1. Requires exactly one space before and after . (dot) in string concatenating
+1. Requires exactly one blank line before and one blank line after namespace statement
+1. Requires max. one namespace per file
+1. Doesn't allow any blank lines between uses and trait uses
+1. Requires one line before first use and one line after last use (not applied if it is trait use and it is first / last in class)
 1. Requires exactly one blank line before and after each function except first and last
 1. Requires exactly one blank line before and after each member var except first and last
+1. Requires `new` with parentheses.
 1. Prefer to use single quotes over double quotes. Double quotes are allowed if string contains variable
 
 ## Usage
