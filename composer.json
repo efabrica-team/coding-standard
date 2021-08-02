@@ -3,6 +3,6 @@
     "description": "PSR2 based coding standard for PHP PHP_CodeSniffer",
     "license": "MIT",
     "require": {
-        "squizlabs/php_codesniffer": "^3.6"
+        "slevomat/coding-standard": "^7.0"
     }
 }

@@ -53,4 +53,5 @@
     <!-- prefer to use single quotes over double quotes -->
     <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired" />
 
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
 </ruleset>
