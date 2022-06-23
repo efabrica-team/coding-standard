@@ -90,4 +90,7 @@
 
     <!-- Requires new with parentheses. -->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
+    
+    <!-- Trailing comma after last element of array -->
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 </ruleset>
