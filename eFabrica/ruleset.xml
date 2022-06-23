@@ -90,7 +90,28 @@
 
     <!-- Requires new with parentheses. -->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
-    
+
     <!-- Trailing comma after last element of array -->
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+
+    <!-- Requires all names as reference - no fully qualified or partial names -->
+    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+            <property name="allowPartialUses" value="false"/>
+        </properties>
+    </rule>
+
+    <!-- Requires all uses to be used -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+        </properties>
+    </rule>
+
+    <!-- Disallow leading backslash for uses -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+
+    <!-- Alphabetically sorted uses  -->
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
 </ruleset>
