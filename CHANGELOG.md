@@ -2,6 +2,9 @@
 
 ### [Unreleased][unreleased]
 
+#### Changed
+- slevomat/coding-standard ^8.4
+
 ### [0.3.0] - 2022-06-23
 #### Added
 - rules for uses
