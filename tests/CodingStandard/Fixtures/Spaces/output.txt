@@ -1,0 +1,32 @@
+FILE: ###ROOT_PATH###/tests/CodingStandard/Fixtures/Spaces/TypePropertySpacesFixture.php
+---------------------------------------------------------------------------------------------------------------
+FOUND 13 ERRORS AFFECTING 4 LINES
+---------------------------------------------------------------------------------------------------------------
+  9 | ERROR | [x] Scope keyword "private" must be followed by a single space; found 2
+  9 | ERROR | [x] There must be exactly one space before type hint of property $foo.
+  9 | ERROR | [x] Duplicate spaces at position 12.
+ 11 | ERROR | [x] There must be exactly one space between type hint and property $bar.
+ 11 | ERROR | [x] Duplicate spaces at position 18.
+ 13 | ERROR | [x] Scope keyword "protected" must be followed by a single space; found 2
+ 13 | ERROR | [x] There must be exactly one space before type hint of property $baz.
+ 13 | ERROR | [x] Duplicate spaces at position 14.
+ 16 | ERROR | [x] Scope keyword "public" must be followed by a single space; found 3
+ 16 | ERROR | [x] There must be exactly one space before type hint of property $asdf.
+ 16 | ERROR | [x] Duplicate spaces at position 11.
+ 16 | ERROR | [x] There must be exactly one space between type hint and property $asdf.
+ 16 | ERROR | [x] Duplicate spaces at position 17.
+---------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------------------------
+
+
+FILE: ###ROOT_PATH###/tests/CodingStandard/Fixtures/Spaces/MethodArgumentTypeSpacesFixture.php
+---------------------------------------------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+---------------------------------------------------------------------------------------------------------------------
+  7 | ERROR | [x] Duplicate spaces at position 31.
+ 11 | ERROR | [x] Expected 0 spaces after opening parenthesis; 1 found
+ 15 | ERROR | [x] Expected 0 spaces before closing parenthesis; 1 found
+---------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------------------------------------

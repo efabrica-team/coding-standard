@@ -1,0 +1,47 @@
+FILE: ###ROOT_PATH###/tests/CodingStandard/Fixtures/SnakeCase/Snake_Case_Fixture.php
+-----------------------------------------------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 6 LINES
+-----------------------------------------------------------------------------------------------------------
+  7 | ERROR | Class name "Snake_Case_Fixture" is not in PascalCase format
+  9 | ERROR | Member variable "foo_bar" is not in valid camel caps format
+ 11 | ERROR | Member variable "bar_baz" is not in valid camel caps format
+ 13 | ERROR | Member variable "foo_baz" is not in valid camel caps format
+ 17 | ERROR | Variable "foo_bar" is not in valid camel caps format
+ 19 | ERROR | Member variable "foo_bar" is not in valid camel caps format
+ 19 | ERROR | Variable "foo_bar" is not in valid camel caps format
+-----------------------------------------------------------------------------------------------------------
+
+
+FILE: ###ROOT_PATH###/tests/CodingStandard/Fixtures/SnakeCase/SnakeCaseFullFixture.php
+-------------------------------------------------------------------------------------------------------------
+FOUND 15 ERRORS AFFECTING 11 LINES
+-------------------------------------------------------------------------------------------------------------
+  9 | ERROR | Member variable "foo_bar" is not in valid camel caps format
+ 11 | ERROR | Member variable "bar_baz" is not in valid camel caps format
+ 13 | ERROR | Member variable "foo_baz" is not in valid camel caps format
+ 17 | ERROR | Variable "foo_bar" is not in valid camel caps format
+ 19 | ERROR | Member variable "foo_bar" is not in valid camel caps format
+ 19 | ERROR | Variable "foo_bar" is not in valid camel caps format
+ 22 | ERROR | Method name "SnakeCaseFullFixture::foo_bar" is not in camel caps format
+ 22 | ERROR | Private method name "SnakeCaseFullFixture::foo_bar" is not in camel caps format
+ 24 | ERROR | Member variable "foo_bar" is not in valid camel caps format
+ 27 | ERROR | Method name "SnakeCaseFullFixture::bar_baz" is not in camel caps format
+ 27 | ERROR | Protected method name "SnakeCaseFullFixture::bar_baz" is not in camel caps format
+ 29 | ERROR | Member variable "bar_baz" is not in valid camel caps format
+ 32 | ERROR | Method name "SnakeCaseFullFixture::foo_baz" is not in camel caps format
+ 32 | ERROR | Public method name "SnakeCaseFullFixture::foo_baz" is not in camel caps format
+ 34 | ERROR | Member variable "foo_baz" is not in valid camel caps format
+-------------------------------------------------------------------------------------------------------------
+
+
+FILE: ###ROOT_PATH###/tests/CodingStandard/Fixtures/SnakeCase/SnakeCaseFixture.php
+---------------------------------------------------------------------------------------------------------
+FOUND 6 ERRORS AFFECTING 3 LINES
+---------------------------------------------------------------------------------------------------------
+  7 | ERROR | Method name "SnakeCaseFixture::foo_bar" is not in camel caps format
+  7 | ERROR | Private method name "SnakeCaseFixture::foo_bar" is not in camel caps format
+ 12 | ERROR | Method name "SnakeCaseFixture::bar_baz" is not in camel caps format
+ 12 | ERROR | Protected method name "SnakeCaseFixture::bar_baz" is not in camel caps format
+ 17 | ERROR | Method name "SnakeCaseFixture::foo_baz" is not in camel caps format
+ 17 | ERROR | Public method name "SnakeCaseFixture::foo_baz" is not in camel caps format
+---------------------------------------------------------------------------------------------------------
