@@ -2,7 +2,15 @@
     "name": "efabrica/coding-standard",
     "description": "PSR2 based coding standard for PHP PHP_CodeSniffer",
     "license": "MIT",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
     "require": {
         "slevomat/coding-standard": "^8.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }
