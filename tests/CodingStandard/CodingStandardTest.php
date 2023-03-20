@@ -14,8 +14,11 @@ final class CodingStandardTest extends TestCase
      */
     public function test(string $path, string $expectedOutput): void {
         $standard = realpath(__DIR__ . '/../../eFabrica');
-        $command = "vendor/bin/phpcs $path --standard=$standard --extensions=\"php\" -n";
+        $command = "vendor/bin/phpcs $path --standard=\"$standard\" --extensions=\"php\" -n --report=\"json\"";
         $output = (string)shell_exec($command);
+
+        $errors = json_decode($output, true);
+        print_R($errors);
 
         $expectedOutput = trim(str_replace('###ROOT_PATH###', realpath(__DIR__ . '/../../'), $expectedOutput));
         $output = trim(preg_replace('/Time: (.*?); Memory: (.*?)$/', '', trim($output)));
@@ -24,7 +27,7 @@ final class CodingStandardTest extends TestCase
 
     public function dataProvider(): Generator
     {
-//        yield [__DIR__ . '/Fixtures/SnakeCase', file_get_contents(__DIR__ . '/Fixtures/SnakeCase/output.txt')];
+        yield [__DIR__ . '/Fixtures/SnakeCase', file_get_contents(__DIR__ . '/Fixtures/SnakeCase/output.txt')];
         yield [__DIR__ . '/Fixtures/Spaces', file_get_contents(__DIR__ . '/Fixtures/Spaces/output.txt')];
     }
 }
