@@ -23,6 +23,12 @@ eFabrica coding standard for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_
 1. Requires alphabetically sorted uses
 1. Disallows leading backslash for uses
 1. Disallows snake_case for properties, variables, function names, method names 
+1. Doesn't allow underscore in method names
+1. Doesn't allow multiple spaces between type and property / variable / parameter
+1. Class structure is defined as follows: uses, enum cases, constants, properties, constructor, methods 
+1. Requires visibility for all constants
+1. Requires exactly one blank line between methods
+1. Doesn't allow any useless comments
 
 ## Usage
 ```shell

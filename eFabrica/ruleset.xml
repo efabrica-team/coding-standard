@@ -55,11 +55,11 @@
         </properties>
     </rule>
 
-    <!-- No underscore in variable names -->
-    <rule ref="Squiz.NamingConventions.ValidVariableName"/>
-    <rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore">
-        <severity>0</severity>
-    </rule>
+    <!-- No underscore in variable names - disabled while $row->property_with_underscore will not be allowed -->
+<!--    <rule ref="Squiz.NamingConventions.ValidVariableName"/>-->
+<!--    <rule ref="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore">-->
+<!--        <severity>0</severity>-->
+<!--    </rule>-->
 
     <!-- No underscore in method names -->
     <rule ref="Squiz.NamingConventions.ValidFunctionName"/>
@@ -67,15 +67,15 @@
         <severity>0</severity>
     </rule>
 
+    <!-- Prefer to use single quotes over double quotes -->
+    <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired" />
+
     <!-- Requires 0 spaces after reference. -->
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing">
         <properties>
             <property name="spacesCountAfterReference" value="0"/>
         </properties>
     </rule>
-
-    <!-- Prefer to use single quotes over double quotes -->
-    <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired" />
 
     <!-- Requires only one namespace in a file. -->
     <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
@@ -142,4 +142,35 @@
             <property name="ignoreSpacesInComment" value="true"/>
         </properties>
     </rule>
+
+    <!-- Structure of classes -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassStructure">
+        <properties>
+            <property name="groups" type="array">
+                <element value="uses"/>
+                <element value="enum cases"/>
+                <element value="constants"/>
+                <element value="properties"/>
+                <element value="constructor"/>
+                <element value="methods"/>
+            </property>
+        </properties>
+    </rule>
+
+    <!-- Class constants visibility -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+
+    <!-- Single space between type and property name -->
+    <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration"/>
+
+    <!-- Exactly one blank line between methods -->
+    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
+        <properties>
+            <property name="minLinesCount" value="1"/>
+            <property name="maxLinesCount" value="2"/>
+        </properties>
+    </rule>
+
+    <!-- Useless comments -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
 </ruleset>

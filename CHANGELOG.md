@@ -2,6 +2,18 @@
 
 ## [Unreleased][unreleased]
 
+### Added
+- snakecase rules
+  - no underscore in method names
+- spacing rules
+  - no duplicate spaces between type and property / variable / parameter
+- strucure rules
+  - class structure is defined as follows: uses, enum cases, constants, properties, constructor, methods 
+  - all constants with visibility
+  - exactly one blank line between methods
+- comments
+  - no useless comments
+
 ## [0.4.0] - 2022-08-09
 ### Changed
 - slevomat/coding-standard ^8.4
