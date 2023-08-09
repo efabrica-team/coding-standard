@@ -5,6 +5,7 @@
     <!-- Include the whole PSR-2 standard -->
     <rule ref="PSR2">
         <exclude name="PSR1"/>
+        <exclude name="Generic.NamingConventions.UpperCaseConstantName"/>
     </rule>
     <rule ref="PSR1">
         <exclude name="Generic.NamingConventions.UpperCaseConstantName"/>
