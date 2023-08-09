@@ -3,7 +3,9 @@
     <description>eFabrica coding standard.</description>
 
     <!-- Include the whole PSR-2 standard -->
-    <rule ref="PSR2"/>
+    <rule ref="PSR2">
+        <exclude name="Generic.NamingConventions.UpperCaseConstantName"/>
+    </rule>
 
     <!-- Turn of blank line after namespace declaration - will be check with SlevomatCodingStandard.Namespaces.NamespaceSpacing -->
     <rule ref="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter">

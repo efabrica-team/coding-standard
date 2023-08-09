@@ -1,6 +1,9 @@
 # Change Log
 
 ## [Unreleased][unreleased]
+### Added
+- constant case ignored
+
 
 ## [0.5.0] - 2023-03-21
 ### Added
