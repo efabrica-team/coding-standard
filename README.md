@@ -1,5 +1,9 @@
-# eFabrica coding standard
-eFabrica coding standard for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) is based on [PSR2](https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards/PSR2) with some changes:
+# eFabrica coding standards
+
+eFabrica coding standards for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) are based on [PSR2](https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards/PSR2).
+
+## eFabrica coding standard
+Is based on PSR2 and adds some rules:
 
 1. Allows max. 1 empty line between code lines
 1. Doesn't allow any whitespace at the end of lines
@@ -30,11 +34,27 @@ eFabrica coding standard for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_
 1. Requires exactly one blank line between methods
 1. Doesn't allow any useless comments
 
-## Usage
+### Usage
 ```shell
 composer require efabrica/coding-standard --dev
 vendor/bin/phpcs {dirs} --standard="vendor/efabrica/coding-standard/eFabrica" {other-options}
 ```
 
-for {dirs} use space-separated list of directories
-for {other-options} see `vendor/bin/phpcs --help` or visit [PHP_CodeSniffer documentation](https://github.com/squizlabs/PHP_CodeSniffer)
+> for {dirs} use space-separated list of directories \
+> for {other-options} see `vendor/bin/phpcs --help` or visit [PHP_CodeSniffer documentation](https://github.com/squizlabs/PHP_CodeSniffer)
+
+## eFabricaStrict coding standard
+Is based on eFabrica coding standard and adds some strict rules:
+
+1. Use `declare(strict_types=1);` at the top of each PHP file. Use one empty line before and also after declare 
+1. Requires each class to be declared either as abstract or as final
+1. Disallows using mixed typehint in phpdoc
+
+### Usage
+```shell
+composer require efabrica/coding-standard --dev
+vendor/bin/phpcs {dirs} --standard="vendor/efabrica/coding-standard/eFabricaStrict" {other-options}
+```
+
+> for {dirs} use space-separated list of directories \
+> for {other-options} see `vendor/bin/phpcs --help` or visit [PHP_CodeSniffer documentation](https://github.com/squizlabs/PHP_CodeSniffer)

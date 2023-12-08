@@ -2,6 +2,12 @@
 
 ## [Unreleased][unreleased]
 
+### Added
+- eFabricaStrict rules
+  - declare(strict_types=1); at the top of each PHP file
+  - each class have to be abstract or final
+  - disallows using mixed typehint
+
 ## [0.5.0] - 2023-03-21
 ### Added
 - snakecase rules

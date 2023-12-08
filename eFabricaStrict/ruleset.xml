@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="efabrica" xsi:noNamespaceSchemaLocation="../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>eFabrica strict coding standard.</description>
+
+    <!-- Include the whole eFabrica coding standard -->
+    <rule ref="../eFabrica"/>
+
+    <!-- declare(strict_types=1) everywhere -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="linesCountBeforeDeclare" value="1"/>
+            <property name="linesCountAfterDeclare" value="1"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Requires the class to be declared either as abstract or as final -->
+    <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal"/>
+
+    <!-- Do not use mixed type hint in phpdoc -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
+</ruleset>
