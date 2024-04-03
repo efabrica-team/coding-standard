@@ -2,6 +2,10 @@
 
 ## [Unreleased][unreleased]
 
+## [0.7.0] - 2024-04-03
+### Changed
+- eFabricaStrict rules - allowed using mixed typehint
+
 ## [0.6.0] - 2023-12-08
 ### Added
 - eFabricaStrict rules
@@ -51,7 +55,8 @@
 - created eFabrica coding standard based on PSR-2
 - added Slevomat codngin standard - rule ReturnTypeHintSpacing 
 
-[unreleased]: https://github.com/efabrica-team/coding-standard/compare/0.6.0...HEAD
+[unreleased]: https://github.com/efabrica-team/coding-standard/compare/0.7.0...HEAD
+[0.7.0]: https://github.com/efabrica-team/coding-standard/compare/0.6.0...0.7.0
 [0.6.0]: https://github.com/efabrica-team/coding-standard/compare/0.5.0...0.6.0
 [0.5.0]: https://github.com/efabrica-team/coding-standard/compare/0.4.0...0.5.0
 [0.4.0]: https://github.com/efabrica-team/coding-standard/compare/0.3.0...0.4.0
