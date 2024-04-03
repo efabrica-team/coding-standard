@@ -18,5 +18,5 @@
     <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal"/>
 
     <!-- Do not use mixed type hint in phpdoc -->
-    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/>
+    <!-- <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/> -->
 </ruleset>
