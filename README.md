@@ -48,7 +48,6 @@ Is based on eFabrica coding standard and adds some strict rules:
 
 1. Use `declare(strict_types=1);` at the top of each PHP file. Use one empty line before and also after declare 
 1. Requires each class to be declared either as abstract or as final
-1. Disallows using mixed typehint in phpdoc
 
 ### Usage
 ```shell
