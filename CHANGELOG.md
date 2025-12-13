@@ -2,6 +2,7 @@
 
 ## [Unreleased][unreleased]
 
+## [0.8.0] - 2025-12-13
 ### Added
 - eFabricaDeclareStrictAndUse rules
   - declare(strict_types=1); at the top of each PHP file
@@ -63,7 +64,8 @@
 - created eFabrica coding standard based on PSR-2
 - added Slevomat codngin standard - rule ReturnTypeHintSpacing 
 
-[unreleased]: https://github.com/efabrica-team/coding-standard/compare/0.7.0...HEAD
+[unreleased]: https://github.com/efabrica-team/coding-standard/compare/0.8.0...HEAD
+[0.8.0]: https://github.com/efabrica-team/coding-standard/compare/0.7.0...0.8.0
 [0.7.0]: https://github.com/efabrica-team/coding-standard/compare/0.6.0...0.7.0
 [0.6.0]: https://github.com/efabrica-team/coding-standard/compare/0.5.0...0.6.0
 [0.5.0]: https://github.com/efabrica-team/coding-standard/compare/0.4.0...0.5.0
