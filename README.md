@@ -22,7 +22,7 @@ Is based on PSR2 and adds some rules:
 1. Requires `new` with parentheses.
 1. Prefer to use single quotes over double quotes. Double quotes are allowed if string contains variable
 1. Requires trailing comma after the last element of multi-line array
-1. Requires all names as reference (no fully qualified or partial names - everything is in uses)
+1. Requires all class names as reference (no fully qualified or partial names - everything is in uses)
 1. Requires all uses to be used
 1. Requires alphabetically sorted uses
 1. Disallows leading backslash for uses
@@ -43,10 +43,24 @@ vendor/bin/phpcs {dirs} --standard="vendor/efabrica/coding-standard/eFabrica" {o
 > for {dirs} use space-separated list of directories \
 > for {other-options} see `vendor/bin/phpcs --help` or visit [PHP_CodeSniffer documentation](https://github.com/squizlabs/PHP_CodeSniffer)
 
-## eFabricaStrict coding standard
-Is based on eFabrica coding standard and adds some strict rules:
+## eFabricaDeclareStrictAndUse
+Is based on eFabrica coding standard and adds some rules:
+1. Use `declare(strict_types=1);` at the top of each PHP file. Use one empty line before and also after declare
+1. Requires all names (classes, functions, constants) as reference (no fully qualified or partial names - everything is in uses)
 
-1. Use `declare(strict_types=1);` at the top of each PHP file. Use one empty line before and also after declare 
+### Usage
+```shell
+composer require efabrica/coding-standard --dev
+vendor/bin/phpcs {dirs} --standard="vendor/efabrica/coding-standard/eFabricaDeclareStrictAndUse" {other-options}
+```
+
+> for {dirs} use space-separated list of directories \
+> for {other-options} see `vendor/bin/phpcs --help` or visit [PHP_CodeSniffer documentation](https://github.com/squizlabs/PHP_CodeSniffer)
+
+
+## eFabricaStrict coding standard
+Is based on eFabricaDeclareStrictAndUse coding standard and adds some strict rules:
+ 
 1. Requires each class to be declared either as abstract or as final
 
 ### Usage

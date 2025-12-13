@@ -14,9 +14,16 @@
         </properties>
     </rule>
 
+    <!-- Requires all names as reference - no fully qualified or partial names also for functions and constants -->
+    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+            <property name="allowPartialUses" value="false"/>
+            <property name="allowFallbackGlobalFunctions" value="false"/>
+            <property name="allowFallbackGlobalConstants" value="false"/>
+        </properties>
+    </rule>
+
     <!-- Requires the class to be declared either as abstract or as final -->
     <rule ref="SlevomatCodingStandard.Classes.RequireAbstractOrFinal"/>
-
-    <!-- Do not use mixed type hint in phpdoc -->
-    <!-- <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"/> -->
 </ruleset>

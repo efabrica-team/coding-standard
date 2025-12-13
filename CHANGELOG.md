@@ -2,6 +2,14 @@
 
 ## [Unreleased][unreleased]
 
+### Added
+- eFabricaDeclareStrictAndUse rules
+  - declare(strict_types=1); at the top of each PHP file
+  - requires all names (classes, functions, constants) as reference (no fully qualified or partial names - everything is in uses)
+
+### Changed
+- eFabricaStrict rules requires all names (classes, functions, constants) as reference (no fully qualified or partial names - everything is in uses)
+
 ## [0.7.0] - 2024-04-03
 ### Changed
 - eFabricaStrict rules - allowed using mixed typehint
